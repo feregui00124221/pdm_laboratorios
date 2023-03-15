@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">Laboratorio-01</string>
+    <string name="presentation_font">serif</string>
+    <string name="image_description">Logo Android</string>
+    <string name="welcome_message">Bienvenido a</string>
+    <string name="course_description">Programación de Dispositivos Móviles</string>
+</resources>
