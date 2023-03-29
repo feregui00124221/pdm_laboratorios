@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">laboratorio-03</string>
+    <string name="initial_value_money">$0</string>
+    <string name="header">Cantidad de dinero</string>
+</resources>
