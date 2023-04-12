@@ -1,0 +1,32 @@
+PREGUNTA 1:
+En la pantalla de la segunda actividad hay un botón para compartir
+la información que se muestra en pantalla. De momento carece de
+funcionalidad. Tienes que hacer que sea posible compartir dicha
+información con distintas aplicaciones.
+
+R// Dentro del setOnClickListener del boton a configurar la accion de compartir, se pega el siguiente codigo:
+    val sendIntent: Intent = Intent().apply {
+        action = Intent.ACTION_SEND
+        putExtra(Intent.EXTRA_TEXT, "This is my text to send.")
+        type = "text/plain"
+    }
+
+    val shareIntent = Intent.createChooser(sendIntent, null)
+    startActivity(shareIntent)
+    
+    
+PREGUNTA 2
+Menciona los tipos de intents que existen y un ejemplo de cada
+uno
+
+R// Explicito> Cuando se necesita utilizar un intent que accione otra activity o fragment dentro de la misma app. 
+	Por ejemplo: Para confirmar un ingreso de datos
+	
+Implicito> Cuando se necesitan compartir datos entre apps
+	Por ejemplo: Para compartir una publicacion de una red a otra
+	
+PREGUNTA 3
+En qué estado de la aplicación se inicializan las variables y se crea
+la vista
+
+R// Las variables se inicializan y la vista es creada en OnCreate, que no hay que confundir con que la vista sea mostrada, que ocurre en OnStart
