@@ -1,0 +1,15 @@
+README
+
+PREGUNTA 1:
+En Navigation Component, todo se vuelve mas intuitivo y digerible para la navegacion dentro de la aplicacion, partiendo del hecho
+que usando view model, todo el tema del intent con los extras se vuelve mucho mas manejable y menos tedioso.
+    
+PREGUNTA 2
+- id
+- label
+- startDestination
+	
+PREGUNTA 3
+Navigation graph proporciona una retroalimentacion visual del flujo de la aplicacion y facilita mucho el estalecimiento de las acciones
+que deben ser ejecutadas para el cambio de una vista.
+
