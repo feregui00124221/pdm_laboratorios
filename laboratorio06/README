@@ -1,0 +1,10 @@
+README
+
+- PREGUNTA 1:
+Consiste en un modelo de separación de lógica de negocios en el que la capa de obtención de datos es llevada a cabo por una entidad conocida como
+Repository, que es quien le provee los métodos a una entidad superior. Para el caso de Móviles, esa capa superior es llevada a cabo por ViewModel, quien
+da el tratamiento oportuno para la comunicación entre la vista en base a un modelo.
+    
+- PREGUNTA 2
+ViewModel es formalmente definido como un contenedor de estados. A lo que se refiere es que sobrevive a los cambios de una aplicación, y únicamente muere
+con ella cuando está definitivamente cerrada. En el modelo MVVM, cumple las veces de mediador, lo que en su día fueron los controladores y presentadores de MVC y MVP, respectivamente.
