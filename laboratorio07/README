@@ -1,0 +1,17 @@
+FERNANDO EGUIZABAL 00124221
+
+README
+
+- PREGUNTA 1:
+Es ventajoso usar LiveData para suscribirse a los cambios que puedan ocurrir en elementos del XML, automatizando los cambios de ida y venida y facilitar la manipulación.
+    
+- PREGUNTA 2
+Utiliza el patrón Observer
+
+- PREGUNTA 3:
+Dentro de las dependencias de Android en el Gradle del Module App, hay que activar dataBinding = true
+
+- PREGUNTA 4:
+DataBinding es una librería de vinculación de datos para facilitar el acceso a componentes específicos de la capa UI. 
+Sus beneficios vs FindViewById es que automatiza muchas declaraciones y manipulaciones, encontrar elementos específicos y el entorno
+provee los ID de forma automáica, en contra del FindVIew, que necesita uno saber de dónde saca los elementos.
