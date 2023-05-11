@@ -8,7 +8,7 @@
     <data>
         <variable
             name="viewmodel"
-            type="com.example.laboratorio05.ui.movie.MovieViewModel" />
+            type="com.example.laboratorio05.ui.movie.viewmodel.MovieViewModel" />
     </data>
 
     <FrameLayout

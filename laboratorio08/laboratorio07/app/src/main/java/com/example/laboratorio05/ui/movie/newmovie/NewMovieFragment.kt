@@ -10,7 +10,7 @@ import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.laboratorio05.databinding.FragmentNewMovieBinding
-import com.example.laboratorio05.ui.movie.MovieViewModel
+import com.example.laboratorio05.ui.movie.viewmodel.MovieViewModel
 
 class NewMovieFragment : Fragment() {
 

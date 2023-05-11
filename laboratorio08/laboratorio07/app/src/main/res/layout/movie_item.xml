@@ -1,22 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?> <!--VERSION DECLARATION-->
 
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.movie.viewmodel.MovieItem">
 
-    <data>
+    <data>  <!--DATA DECLARATION FOR VIEWMODEL USAGE-->
+
         <variable
             name="viewmodel"
-            type="com.example.laboratorio05.ui.movie.MovieViewModel" />
-    </data>
+            type="com.example.laboratorio05.ui.movie.viewmodel.MovieViewModel" />
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    </data>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/movieItemCardView"
@@ -24,19 +20,19 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/mediumGap"
             android:backgroundTint="@color/cardLayout"
-            app:cardMaxElevation="@dimen/mediumGap"
-            app:cardCornerRadius="@dimen/smallGap">
+            app:cardCornerRadius="@dimen/smallGap"
+            app:cardMaxElevation="@dimen/mediumGap">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <ImageView
+                <com.google.android.material.imageview.ShapeableImageView
                     android:layout_width="@dimen/LargeGap"
                     android:layout_height="@dimen/LargeGap"
                     android:layout_margin="@dimen/smallGap"
-                    android:src="@drawable/starawars" />
+                    android:src="@drawable/starawars"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -51,8 +47,8 @@
                         android:layout_marginEnd="@dimen/mediumGap"
                         android:fontFamily="sans-serif-condensed"
                         android:text="@string/starWarsText"
-                        android:textSize="@dimen/mediumLargeTextGap"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/mediumLargeTextGap" />
 
                     <TextView
                         android:id="@+id/qualificationTextView"
@@ -60,14 +56,13 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed-medium"
                         android:text="@string/starWarsCalification"
+                        android:textColor="@color/calification"
                         android:textSize="@dimen/largeTextGap"
-                        android:textStyle="bold"
-                        android:textColor="@color/calification"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
-    </FrameLayout>
 
 </layout>

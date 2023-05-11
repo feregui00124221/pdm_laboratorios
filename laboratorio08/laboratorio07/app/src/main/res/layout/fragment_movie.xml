@@ -3,12 +3,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.movie.viewmodel.MovieFragment">
+    tools:context=".ui.movie.MovieFragment">
 
     <data>
         <variable
             name="viewmodel"
-            type="com.example.laboratorio05.ui.movie.MovieViewModel" />
+            type="com.example.laboratorio05.ui.movie.viewmodel.MovieViewModel" />
     </data>
 
     <FrameLayout
@@ -26,6 +26,7 @@
                 android:layout_height="@dimen/extraLargeGap"
                 android:layout_marginTop="@dimen/mediumGap"
                 android:src="@drawable/starawars"
+                android:contentDescription="Imagen de la pelicula"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

@@ -16,4 +16,5 @@
     <string name="descriptionHint">Description</string>
     <string name="calificationHint">Calification</string>
     <string name="submitButtonText">Submit</string>
+    <string name="btnFloatingText">Boton de agregar pelicula</string>
 </resources>
