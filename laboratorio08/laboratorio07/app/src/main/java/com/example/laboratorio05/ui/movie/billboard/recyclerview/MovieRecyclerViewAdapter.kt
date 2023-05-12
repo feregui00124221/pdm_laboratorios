@@ -25,6 +25,7 @@ class MovieRecyclerViewAdapter(
         val movie = movies[position]
 
         holder.bind(movie, clickListener)
+
     }
 
     override fun getItemCount(): Int {

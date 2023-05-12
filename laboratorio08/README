@@ -1,0 +1,12 @@
+FERNANDO EGUIZABAL 00124221
+
+README
+
+- PREGUNTA 1:
+La ventaja principal de Recycler View es la capacidad de optimizar la carga de elementos repetidos en una interfaz, a la vez que delegar la responsabilidad de renderizado a una entidad con sus propios métodos que automatizan ciertos procesos.
+    
+- PREGUNTA 2
+- LayoutManager: Es el encargado del desplegado y organizacion de los componentes internos.
+- Adapter: Encargado de preparar la data para el recyccler view
+- Holder: Contiene la informacion a ser desplegada como item layout.
+- Item Layout: Elemento individual a renderizarse repetidamente.
