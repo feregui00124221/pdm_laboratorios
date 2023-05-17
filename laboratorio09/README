@@ -1,0 +1,30 @@
+FERNANDO EGUIZABAL 00124221
+
+README
+
+- PREGUNTA 1:
+Una corrutina de Kotlin es un mecanismo de programación asíncrona que permite el manejo óptimo
+de recursos para dividir tareas y distribuir carga de procesamiento, similar a los async y await 
+en JavaScript.
+    
+- PREGUNTA 2:
+La suspensión de corrutinas es importante porque permite la distribución justa de la carga de 
+trabajo entre las demás, haciendo uso organizado de los hilos.
+Es implementada agregando "suspend" previo a una función, haciendo que en los hilos, los procesos
+se detengan y almacenen temporalmente mientras se reactiva.
+
+- PREGUNTA 3:
+El Dispatcher es el encargado de indicar en qué hilo se procesará el trabajo de la corrutina.
+Para escoger el dispatcher adecuado, se recomienda tener en cuenta sus definiciones:
+
+	Dispatchers.Default: Este Dispatcher se recomienda para operaciones intensivas en CPU, como transformaciones de datos, cálculos complejos, algoritmos, etc. Utiliza un grupo de hilos compartidos y se ajusta automáticamente según la cantidad de núcleos del procesador. Puede haber tantos hilos como núcleos, por lo que es adecuado para cargas de trabajo que requieren un uso intensivo de CPU.
+
+	Dispatchers.IO: Este Dispatcher está diseñado para realizar operaciones de E/S (entrada/salida) intensivas, como lectura o escritura de archivos, solicitudes de red, acceso a bases de datos, etc. Utiliza un grupo de hilos específico para operaciones de E/S y permite más hilos en comparación con el Dispatcher.Default, lo que permite que las operaciones de E/S se realicen de manera eficiente sin bloquear los hilos de CPU.
+
+	Dispatchers.Main: Este Dispatcher se utiliza para realizar operaciones en el hilo principal de la interfaz de usuario (UI) en aplicaciones de Android o en el hilo principal de eventos en aplicaciones de escritorio. Es necesario usar este Dispatcher para realizar actualizaciones en la interfaz de usuario, ya que solo el hilo principal puede modificar la interfaz de usuario de manera segura.
+
+	Dispatchers.Unconfined: Este Dispatcher ejecuta la corrutina en el hilo en el que se suspendió hasta que se reanuda. No está asociado con un hilo específico y no garantiza ninguna continuidad de ejecución en un hilo particular. Se utiliza cuando se requiere que una corrutina se ejecute de manera inmediata en el contexto actual sin cambiar a otro hilo.
+	
+- PREGUNTA 4:
+async: Constructor utilizado para lanzar coroutines de manera asíncrona se obtiene el resultado
+utilizando el objeto Deferred. El resultado se obtiene mediante la función await(). Y es útil cuando se deben ejecutar tareas concurrentes y combinar los resultados.

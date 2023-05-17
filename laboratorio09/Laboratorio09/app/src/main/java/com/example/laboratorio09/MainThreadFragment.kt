@@ -40,7 +40,7 @@ class MainThreadFragment : Fragment() {
     }
 
     private fun downloadUserData() {
-        for (i in 1..200) {
+        for (i in 1..50000) {
             // This is running in main thread
             Log.i(APP_TAG, "Downloading user $i in ${Thread.currentThread().name}")
         }

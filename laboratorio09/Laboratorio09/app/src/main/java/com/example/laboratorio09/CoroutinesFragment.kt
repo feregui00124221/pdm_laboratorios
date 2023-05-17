@@ -53,7 +53,7 @@ class CoroutinesFragment : Fragment() {
             withContext(Dispatchers.Main) {
                 binding.messageTextView.text = "Downloading user $i"
             }
-            delay(100)
+            delay(500)
         }
     }
 
